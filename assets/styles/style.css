@@ -27,8 +27,6 @@ a {
 hr {
   height: 3px;
 
-  margin-top: 2vw;
-  
   border: 0;
 
   background-color: #2bb7ae;
@@ -61,25 +59,24 @@ main article + article {
 article > header {
   display: flex;
 
-  justify-content: space-between;
   align-items: center;
 }
 
-header > section:first-child {
+header > div:first-child {
   max-width: 40%;
 }
 
-header > section:first-child p:nth-child(2) {
+header > div:first-child p:nth-child(2) {
   margin-bottom: 20px;
 
   color: #2bb7ae;
 }
 
-header > section:nth-child(2) img {
+header > div:nth-child(2) img {
   width: 20vh;
   height: 20vh;
 
-  margin-left: -10%;
+  margin-left: 30%;
 
   border: 5px solid #2bb7ae;
   border-radius: 50%;
@@ -87,15 +84,17 @@ header > section:nth-child(2) img {
   object-fit: cover;
 }
 
-header > section:last-child {
+header > div:last-child {
   display: flex;
 
   flex-direction: column;
   align-items: flex-end;
   align-self: flex-start;
+
+  margin-left: auto;
 }
 
-header > section:last-child a {
+header > div:last-child a {
   display: flex;
 
   align-items: center;
@@ -103,6 +102,6 @@ header > section:last-child a {
   margin: 5px;
 }
 
-header > section:last-child a > img {
+header > div:last-child a > img {
   margin-left: 10px;
 }
