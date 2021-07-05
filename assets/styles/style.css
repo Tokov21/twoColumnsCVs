@@ -25,6 +25,7 @@ a {
 }
 
 hr {
+  width: 100%;
   height: 3px;
 
   border: 0;
@@ -80,6 +81,14 @@ article *::selection {
 
 main article + article {
   margin-left: 1vw;
+}
+
+.link img {
+  width: 18px;
+  margin-bottom: -2px;
+
+  filter: invert(55%) sepia(84%) saturate(354%) hue-rotate(125deg)
+    brightness(95%) contrast(91%);
 }
 
 article > header {
@@ -191,4 +200,36 @@ header > div:last-child a > img {
 
 .workExp > div * {
   margin-bottom: 5px;
+}
+
+.skills ul {
+  font-size: 0;
+}
+
+.skills li {
+  display: inline-block;
+
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+
+  color: white;
+  background-color: #2cbbad;
+
+  font-size: 1rem;
+}
+
+.achievements li {
+  margin-bottom: 10px;
+}
+
+.additional-info {
+  font-size: .9rem;
+  font-style: italic;
+  color: rgb(139, 139, 139);
+}
+
+.interests ul {
+  display: flex;
+  
 }
