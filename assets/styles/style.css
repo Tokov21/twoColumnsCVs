@@ -42,15 +42,12 @@ main {
   justify-content: center;
   align-items: center;
 
-  /* min-width: fit-content; */
-  height: fit-content;
   padding: 1vw;
 }
 
 main > .article {
   flex-grow: 1;
 
-  height: 100%;
   padding: 1vw 5vw;
 
   position: relative;
@@ -96,7 +93,7 @@ main .article + .article {
   min-height: 150px;
   max-width: 220px;
   max-height: 220px;
-  margin-left: 30%;
+  margin-left: 5%;
 
   border: 5px solid #2cbbad;
   border-radius: 50%;
@@ -166,7 +163,6 @@ main .article + .article {
 }
 
 .workExp li {
-  /* font-size: 20px; */
   list-style-type: "■  ";
   color: #2cbbad;
   margin-left: 1.1rem;
@@ -188,8 +184,8 @@ main .article + .article {
 
   position: absolute;
   top: 0;
-  left: -12.7%;
-  right: 105.5%;
+  left: -29%;
+  right: 121%;
 
   background-color: #2cbbad;
 }
@@ -227,4 +223,56 @@ main .article + .article {
 
 .interests ul {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.interests li {
+  display: flex;
+  align-items: center;
+}
+
+.interests li::before {
+  content: url(../images/atom.svg);
+
+  margin-right: 5px;
+
+  filter: invert(59%) sepia(77%) saturate(398%) hue-rotate(125deg)
+    brightness(91%) contrast(87%);
+}
+
+.interests li:nth-child(2)::before {
+  content: url(../images/mountain.svg);
+}
+
+.interests li:nth-child(3)::before {
+  content: url(../images/earth.svg);
+}
+
+.interests li:nth-child(4)::before {
+  content: url(../images/twitter.svg);
+}
+
+.interests li:nth-child(5)::before {
+  content: url(../images/rocket-outline.svg);
+}
+
+.interests li:nth-child(6)::before {
+  content: url(../images/wind-turbine.svg);
+}
+
+.interests li:nth-child(7)::before {
+  content: url(../images/rocket-launch-outline.svg);
+}
+
+.interests li:nth-child(8)::before {
+  content: url(../images/book-outline.svg);
+}
+
+.interests li:nth-child(9)::before {
+  content: url(../images/gamepad-variant-outline.svg);
+}
+
+.interests li:nth-child(10)::before {
+  content: url(../images/chip.svg);
 }
