@@ -62,7 +62,7 @@ main .article + .article {
   margin-left: 1vw;
 }
 
-.link img {
+.link .source {
   width: 18px;
   margin-bottom: -2px;
 
